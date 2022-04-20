@@ -1,0 +1,52 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Introjavaguia5;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author lucca
+ */
+public class ej12guia5bucles {
+
+    /**
+     * 
+     * Escriba un programa que valide si una nota está entre 0 y 10, sino está entre 0 y 10 
+la nota se pedirá de nuevo hasta que la nota sea correcta.
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    
+        int nota = 0;
+        
+        Scanner n= new Scanner(System.in);
+        
+        System.out.println("Ingrese nota: ");
+        
+        nota=n.nextInt();
+        
+        while(nota<0 || nota>10){
+            
+        System.out.println("Ingrese nota: ");
+        
+        nota=n.nextInt();
+        
+       
+        continue;
+            
+        
+       
+              
+          
+           
+            
+            
+        }
+            System.out.println("es correcto");
+    }
+    
+}
